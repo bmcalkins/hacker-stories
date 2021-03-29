@@ -25,7 +25,7 @@ function App() {
       <input id="search" type="text" />
 
       <hr />
-        {list.map(function(item) { return <div>{item.title}</div>;
+        {list.map(function(item) { return <div key={item.objectID}>{item.title}</div>;
       })}
 
     </div>
